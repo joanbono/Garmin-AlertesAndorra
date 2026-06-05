@@ -85,3 +85,11 @@ AndorraAlerts/
 | BACK | Return to previous screen |
 | UP / DOWN (detail) | Scroll content |
 | SELECT (detail) | Open alert type legend |
+
+## Screenshots 
+
+![](img/img_001.png)
+
+![](img/img_002.png)
+
+![](img/img_003.png)
