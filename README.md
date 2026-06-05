@@ -44,6 +44,24 @@ A Garmin Connect IQ widget for Fenix 7 series watches that displays real-time we
 - Garmin Connect IQ SDK 8.4.1+
 - VS Code with the [Monkey C extension](https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c)
 
+## Installation
+
+A pre-built binary is available in [`bin/GarminAlertesAndorra.prg`](bin/GarminAlertesAndorra.prg).
+
+**Install via USB:**
+
+1. Connect your Fenix 7 to your computer with a USB cable.
+2. The watch will appear as a mass storage device.
+3. Copy `GarminAlertesAndorra.prg` into the `GARMIN/APPS/` folder on the watch.
+4. Safely eject the device — the widget will appear in the widget loop.
+
+**Install via Garmin Express:**
+
+1. Open Garmin Express and connect your watch.
+2. Go to **My Device → Add Widget** — Garmin Express can sideload `.prg` files directly.
+
+> **Note:** Sideloaded widgets are not signed by the Connect IQ Store. Your watch may show a prompt asking you to allow the unsigned app on first launch.
+
 ## Building
 
 Open the `AndorraAlerts` folder in VS Code and run **Run App** from the Run & Debug panel, or build from the command line:
