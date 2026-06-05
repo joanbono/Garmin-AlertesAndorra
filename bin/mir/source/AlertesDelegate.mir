@@ -1,0 +1,96 @@
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 4; @symbol_classdef = [AlertesDelegate,4,6,21]; @symbol_extends<0> = [WatchUi,4,30,37]; @symbol_extends<1> = [BehaviorDelegate,4,38,54]; ]
+class AlertesDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 6; @position = 16; @symbol_vardef = [_view,6,16,21]; @symbol_type<0> = [AlertesAndorraView,6,25,43]; ]
+    private
+    var _view as AlertesAndorraView;
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [view,8,24,28]; @symbol_param<0>_type<0> = [AlertesAndorraView,8,32,50]; ]
+    function initialize(view as AlertesAndorraView) as Void {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_8_52_11_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 9 8 ]
+        symbol [ BehaviorDelegate %tmp.2 9 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 9 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 10 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 10 16 20 ];
+        symbol [ _view ? 10 8 13 ];
+        putv self :_view %tmp.4;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_8_52_11_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 13; @symbol_functiondef = [onNextPage,13,13,23]; @symbol_return<0> = [Boolean,13,29,36]; ]
+    function onNextPage() as Boolean {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_13_37_16_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 14 8 ]
+        symbol [ _view %tmp.2 14 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ scrollDown %tmp.3 14 14 24 ];
+        %tmp.3 = getv function %tmp.2 :scrollDown;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 15 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_13_37_16_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 18; @symbol_functiondef = [onPreviousPage,18,13,27]; @symbol_return<0> = [Boolean,18,33,40]; ]
+    function onPreviousPage() as Boolean {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_18_41_21_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 19 8 ]
+        symbol [ _view %tmp.2 19 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ scrollUp %tmp.3 19 14 22 ];
+        %tmp.3 = getv function %tmp.2 :scrollUp;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 20 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_18_41_21_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 23; @symbol_functiondef = [onSelect,23,13,21]; @symbol_return<0> = [Boolean,23,27,34]; ]
+    function onSelect() as Boolean {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_23_35_26_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 24 8 ]
+        symbol [ _view %tmp.2 24 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ openDetail %tmp.3 24 14 24 ];
+        %tmp.3 = getv function %tmp.2 :openDetail;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 25 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_23_35_26_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 28; @symbol_functiondef = [onBack,28,13,19]; @symbol_return<0> = [Boolean,28,25,32]; ]
+    function onBack() as Boolean {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_28_33_31_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 29 8 ]
+        symbol [ WatchUi %tmp.1 29 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 29 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 29 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 29 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc" 30 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_AlertesDelegate_mc_28_33_31_4_stop:
+    }
+}
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/AlertesDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,390 @@
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 6; @symbol_classdef = [LegendView,6,6,16]; @symbol_extends<0> = [WatchUi,6,25,32]; @symbol_extends<1> = [View,6,33,37]; ]
+class LegendView extends WatchUi.View {
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 8; @position = 16; @symbol_vardef = [_icons,8,16,22]; @symbol_type<0> = [Array,8,27,32]; ]
+    private
+    var _icons as Array;
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 9; @position = 16; @symbol_vardef = [_labels,9,16,23]; @symbol_type<0> = [Array,9,27,32]; ]
+    private
+    var _labels as Array;
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
+    function initialize() as Void {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_11_26_31_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 13 8 ]
+        %tmp.4 = newa 7;
+        %tmp.5 = "Intensitat de pluja";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 0 %tmp.5;
+        %tmp.8 = "Acumulació de pluja";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 1 %tmp.8;
+        %tmp.11 = "Tempestes";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 2 %tmp.11;
+        %tmp.14 = "Vent violent";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 3 %tmp.14;
+        %tmp.17 = "Allaus";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 4 %tmp.17;
+        %tmp.20 = "Acumulació de neu";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 5 %tmp.20;
+        %tmp.23 = "Temperatures";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 6 %tmp.23;
+        symbol [ _labels ? 13 8 15 ];
+        putv self :_labels %tmp.25;
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 22 8 ]
+        %tmp.26 = newa 7;
+        symbol [ Application %tmp.27 23 12 23 ];
+        %tmp.27 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.28 23 24 36 ];
+        %tmp.28 = getv function %tmp.27 :loadResource;
+        symbol [ Rez %tmp.30 23 37 40 ];
+        %tmp.30 = getv ? :Rez;
+        symbol [ Drawables %tmp.31 23 41 50 ];
+        %tmp.31 = getv %tmp.30 :Drawables;
+        symbol [ icon_type1 %tmp.32 23 51 61 ];
+        %tmp.32 = getv %tmp.31 :icon_type1;
+        %tmp.33 = invoke %tmp.27 %tmp.28(%tmp.32);
+        %tmp.34 = as %tmp.33 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.34 23 66 73 ];
+        symbol [ BitmapResource %tmp.34 23 74 88 ];
+        %tmp.35 = dup %tmp.26;
+        %tmp.36 = aputv %tmp.35 0 %tmp.34;
+        symbol [ Application %tmp.37 24 12 23 ];
+        %tmp.37 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.38 24 24 36 ];
+        %tmp.38 = getv function %tmp.37 :loadResource;
+        symbol [ Rez %tmp.40 24 37 40 ];
+        %tmp.40 = getv ? :Rez;
+        symbol [ Drawables %tmp.41 24 41 50 ];
+        %tmp.41 = getv %tmp.40 :Drawables;
+        symbol [ icon_type2 %tmp.42 24 51 61 ];
+        %tmp.42 = getv %tmp.41 :icon_type2;
+        %tmp.43 = invoke %tmp.37 %tmp.38(%tmp.42);
+        %tmp.44 = as %tmp.43 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.44 24 66 73 ];
+        symbol [ BitmapResource %tmp.44 24 74 88 ];
+        %tmp.45 = dup %tmp.36;
+        %tmp.46 = aputv %tmp.45 1 %tmp.44;
+        symbol [ Application %tmp.47 25 12 23 ];
+        %tmp.47 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.48 25 24 36 ];
+        %tmp.48 = getv function %tmp.47 :loadResource;
+        symbol [ Rez %tmp.50 25 37 40 ];
+        %tmp.50 = getv ? :Rez;
+        symbol [ Drawables %tmp.51 25 41 50 ];
+        %tmp.51 = getv %tmp.50 :Drawables;
+        symbol [ icon_type3 %tmp.52 25 51 61 ];
+        %tmp.52 = getv %tmp.51 :icon_type3;
+        %tmp.53 = invoke %tmp.47 %tmp.48(%tmp.52);
+        %tmp.54 = as %tmp.53 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.54 25 66 73 ];
+        symbol [ BitmapResource %tmp.54 25 74 88 ];
+        %tmp.55 = dup %tmp.46;
+        %tmp.56 = aputv %tmp.55 2 %tmp.54;
+        symbol [ Application %tmp.57 26 12 23 ];
+        %tmp.57 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.58 26 24 36 ];
+        %tmp.58 = getv function %tmp.57 :loadResource;
+        symbol [ Rez %tmp.60 26 37 40 ];
+        %tmp.60 = getv ? :Rez;
+        symbol [ Drawables %tmp.61 26 41 50 ];
+        %tmp.61 = getv %tmp.60 :Drawables;
+        symbol [ icon_type4 %tmp.62 26 51 61 ];
+        %tmp.62 = getv %tmp.61 :icon_type4;
+        %tmp.63 = invoke %tmp.57 %tmp.58(%tmp.62);
+        %tmp.64 = as %tmp.63 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.64 26 66 73 ];
+        symbol [ BitmapResource %tmp.64 26 74 88 ];
+        %tmp.65 = dup %tmp.56;
+        %tmp.66 = aputv %tmp.65 3 %tmp.64;
+        symbol [ Application %tmp.67 27 12 23 ];
+        %tmp.67 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.68 27 24 36 ];
+        %tmp.68 = getv function %tmp.67 :loadResource;
+        symbol [ Rez %tmp.70 27 37 40 ];
+        %tmp.70 = getv ? :Rez;
+        symbol [ Drawables %tmp.71 27 41 50 ];
+        %tmp.71 = getv %tmp.70 :Drawables;
+        symbol [ icon_type5 %tmp.72 27 51 61 ];
+        %tmp.72 = getv %tmp.71 :icon_type5;
+        %tmp.73 = invoke %tmp.67 %tmp.68(%tmp.72);
+        %tmp.74 = as %tmp.73 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.74 27 66 73 ];
+        symbol [ BitmapResource %tmp.74 27 74 88 ];
+        %tmp.75 = dup %tmp.66;
+        %tmp.76 = aputv %tmp.75 4 %tmp.74;
+        symbol [ Application %tmp.77 28 12 23 ];
+        %tmp.77 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.78 28 24 36 ];
+        %tmp.78 = getv function %tmp.77 :loadResource;
+        symbol [ Rez %tmp.80 28 37 40 ];
+        %tmp.80 = getv ? :Rez;
+        symbol [ Drawables %tmp.81 28 41 50 ];
+        %tmp.81 = getv %tmp.80 :Drawables;
+        symbol [ icon_type6 %tmp.82 28 51 61 ];
+        %tmp.82 = getv %tmp.81 :icon_type6;
+        %tmp.83 = invoke %tmp.77 %tmp.78(%tmp.82);
+        %tmp.84 = as %tmp.83 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.84 28 66 73 ];
+        symbol [ BitmapResource %tmp.84 28 74 88 ];
+        %tmp.85 = dup %tmp.76;
+        %tmp.86 = aputv %tmp.85 5 %tmp.84;
+        symbol [ Application %tmp.87 29 12 23 ];
+        %tmp.87 = getm $.Toybox.Application;
+        symbol [ loadResource %tmp.88 29 24 36 ];
+        %tmp.88 = getv function %tmp.87 :loadResource;
+        symbol [ Rez %tmp.90 29 37 40 ];
+        %tmp.90 = getv ? :Rez;
+        symbol [ Drawables %tmp.91 29 41 50 ];
+        %tmp.91 = getv %tmp.90 :Drawables;
+        symbol [ icon_type7 %tmp.92 29 51 61 ];
+        %tmp.92 = getv %tmp.91 :icon_type7;
+        %tmp.93 = invoke %tmp.87 %tmp.88(%tmp.92);
+        %tmp.94 = as %tmp.93 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.94 29 66 73 ];
+        symbol [ BitmapResource %tmp.94 29 74 88 ];
+        %tmp.95 = dup %tmp.86;
+        %tmp.96 = aputv %tmp.95 6 %tmp.94;
+        symbol [ _icons ? 22 8 14 ];
+        putv self :_icons %tmp.96;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_11_26_31_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 33; @symbol_functiondef = [onLayout,33,13,21]; @symbol_param<0> = [dc,33,22,24]; @symbol_param<0>_type<0> = [Dc,33,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 36; @symbol_functiondef = [onUpdate,36,13,21]; @symbol_param<0> = [dc,36,22,24]; @symbol_param<0>_type<0> = [Dc,36,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 37 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 37 8 10 ];
+        symbol [ setColor %tmp.2 37 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 37 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 37 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 37 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 37 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 38 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 38 8 10 ];
+        symbol [ clear %tmp.8 38 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 40 8 ]
+        [ "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_start" "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 40 12 13 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 40 17 19 ];
+        symbol [ getWidth %tmp.10 40 20 28 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %w.1 %tmp.11;
+        symbol [ w %w.1 40 12 13 ];
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 41 8 ]
+        [ "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_start" "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_stop" ]
+        %cx.2 = local;
+        symbol [ cx %cx.2 41 12 14 ];
+        %tmp.12 = lgetv %w.1;
+        symbol [ w %tmp.12 41 17 18 ];
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        lputv %cx.2 %tmp.14;
+        symbol [ cx %cx.2 41 12 14 ];
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 44 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 44 8 10 ];
+        symbol [ setColor %tmp.16 44 11 19 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ Graphics %tmp.17 44 20 28 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.18 44 29 40 ];
+        %tmp.18 = getv %tmp.17 :COLOR_WHITE;
+        symbol [ Graphics %tmp.19 44 42 50 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.20 44 51 62 ];
+        %tmp.20 = getv %tmp.19 :COLOR_WHITE;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 45 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 45 8 10 ];
+        symbol [ fillRectangle %tmp.22 45 11 24 ];
+        %tmp.22 = getv function %tmp.21 :fillRectangle;
+        %tmp.23 = 0;
+        %tmp.24 = 0;
+        %tmp.25 = lgetv %w.1;
+        symbol [ w %tmp.25 45 31 32 ];
+        %tmp.26 = 34;
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24, %tmp.25, %tmp.26);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 46 8 ]
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 46 8 10 ];
+        symbol [ setColor %tmp.28 46 11 19 ];
+        %tmp.28 = getv function %tmp.27 :setColor;
+        symbol [ Graphics %tmp.29 46 20 28 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.30 46 29 40 ];
+        %tmp.30 = getv %tmp.29 :COLOR_BLACK;
+        symbol [ Graphics %tmp.31 46 42 50 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.32 46 51 62 ];
+        %tmp.32 = getv %tmp.31 :COLOR_WHITE;
+        invoke %tmp.27 %tmp.28(%tmp.30, %tmp.32);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 47 8 ]
+        %tmp.33 = lgetv %dc;
+        symbol [ dc %tmp.33 47 8 10 ];
+        symbol [ drawText %tmp.34 47 11 19 ];
+        %tmp.34 = getv function %tmp.33 :drawText;
+        %tmp.35 = lgetv %cx.2;
+        symbol [ cx %tmp.35 47 20 22 ];
+        %tmp.36 = 10;
+        symbol [ Graphics %tmp.37 47 28 36 ];
+        %tmp.37 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.38 47 37 47 ];
+        %tmp.38 = getv %tmp.37 :FONT_XTINY;
+        %tmp.39 = "Llegenda";
+        symbol [ Graphics %tmp.40 47 61 69 ];
+        %tmp.40 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.41 47 70 89 ];
+        %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.33 %tmp.34(%tmp.35, %tmp.36, %tmp.38, %tmp.39, %tmp.41);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 50 8 ]
+        [ "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_start" "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_stop" ]
+        %y.3 = local;
+        symbol [ y %y.3 50 12 13 ];
+        %tmp.42 = 50;
+        lputv %y.3 %tmp.42;
+        symbol [ y %y.3 50 12 13 ];
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 51 8 ]
+        [ "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_start" "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_stop" ]
+        %rowH.4 = local;
+        symbol [ rowH %rowH.4 51 12 16 ];
+        %tmp.43 = 26;
+        lputv %rowH.4 %tmp.43;
+        symbol [ rowH %rowH.4 51 12 16 ];
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 52 8 ]
+        for @_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_test @_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_incr @_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_end;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_init:
+        [ "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_begin" "_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_end" ]
+        %t.5 = local;
+        symbol [ t %t.5 52 17 18 ];
+        %tmp.44 = 0;
+        lputv %t.5 %tmp.44;
+        symbol [ t %t.5 52 17 18 ];
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_test:
+        %tmp.45 = lgetv %t.5;
+        symbol [ t %tmp.45 52 24 25 ];
+        %tmp.46 = 7;
+        %tmp.47 = lt %tmp.45 %tmp.46;
+        bf %tmp.47 @_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_end;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_begin:
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_36_58_8_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 53 12 ]
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 53 12 14 ];
+        symbol [ drawBitmap %tmp.49 53 15 25 ];
+        %tmp.49 = getv function %tmp.48 :drawBitmap;
+        %tmp.50 = 65;
+        %tmp.51 = lgetv %y.3;
+        symbol [ y %tmp.51 53 30 31 ];
+        %tmp.52 = 2;
+        %tmp.53 = add %tmp.51 %tmp.52;
+        symbol [ _icons %tmp.55 53 37 43 ];
+        %tmp.55 = getv ? :_icons;
+        %tmp.56 = lgetv %t.5;
+        symbol [ t %tmp.56 53 44 45 ];
+        %tmp.57 = agetv %tmp.55 %tmp.56;
+        %tmp.58 = as %tmp.57 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.58 53 50 57 ];
+        symbol [ BitmapResource %tmp.58 53 58 72 ];
+        invoke %tmp.48 %tmp.49(%tmp.50, %tmp.53, %tmp.58);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 54 12 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 54 12 14 ];
+        symbol [ setColor %tmp.60 54 15 23 ];
+        %tmp.60 = getv function %tmp.59 :setColor;
+        %tmp.61 = 0xAAAAAA;
+        symbol [ Graphics %tmp.62 54 34 42 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.63 54 43 60 ];
+        %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.63);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 55 12 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 55 12 14 ];
+        symbol [ drawText %tmp.65 55 15 23 ];
+        %tmp.65 = getv function %tmp.64 :drawText;
+        %tmp.66 = 87;
+        %tmp.67 = lgetv %y.3;
+        symbol [ y %tmp.67 55 28 29 ];
+        %tmp.68 = 2;
+        %tmp.69 = sub %tmp.67 %tmp.68;
+        symbol [ Graphics %tmp.70 55 35 43 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.71 55 44 54 ];
+        %tmp.71 = getv %tmp.70 :FONT_XTINY;
+        symbol [ _labels %tmp.73 55 56 63 ];
+        %tmp.73 = getv ? :_labels;
+        %tmp.74 = lgetv %t.5;
+        symbol [ t %tmp.74 55 64 65 ];
+        %tmp.75 = agetv %tmp.73 %tmp.74;
+        %tmp.76 = as %tmp.75 String;
+        symbol [ String %tmp.76 55 70 76 ];
+        symbol [ Graphics %tmp.77 56 24 32 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.78 56 33 50 ];
+        %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.69, %tmp.71, %tmp.76, %tmp.78);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 57 12 ]
+        %tmp.79 = lgetv %y.3;
+        symbol [ y %tmp.79 57 12 13 ];
+        %tmp.80 = lgetv %rowH.4;
+        symbol [ rowH %tmp.80 57 17 21 ];
+        %tmp.81 = add %tmp.79 %tmp.80;
+        lputv %y.3 %tmp.81;
+        symbol [ y %y.3 57 12 13 ];
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_36_58_8_stop:
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_incr:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc" 52 ]
+        %tmp.84 = lgetv %t.5;
+        symbol [ t %tmp.84 52 31 32 ];
+        %tmp.85 = add %tmp.84 1;
+        lputv %t.5 %tmp.85;
+        symbol [ t %t.5 52 31 32 ];
+        goto @_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_test;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_52_8_58_8_for_end:
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendView_mc_36_40_59_4_stop:
+    }
+}
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendView.mc"; @line = 1; ]
+<init> {
+}

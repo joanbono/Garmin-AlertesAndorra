@@ -1,0 +1,46 @@
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 4; @symbol_classdef = [LegendDelegate,4,6,20]; @symbol_extends<0> = [WatchUi,4,29,36]; @symbol_extends<1> = [BehaviorDelegate,4,37,53]; ]
+class LegendDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendDelegate_mc_6_26_8_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 10; @symbol_functiondef = [onBack,10,13,19]; @symbol_return<0> = [Boolean,10,25,32]; ]
+    function onBack() as Boolean {
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendDelegate_mc_10_33_13_4_start:
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc" 11 8 ]
+        symbol [ WatchUi %tmp.1 11 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 11 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 11 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.4 11 32 43 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc" 12 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_joanbono_Git_Garmin_AlertesAndorra_source_LegendDelegate_mc_10_33_13_4_stop:
+    }
+}
+[ @file = "/Users/joanbono/Git/Garmin-AlertesAndorra/source/LegendDelegate.mc"; @line = 1; ]
+<init> {
+}
